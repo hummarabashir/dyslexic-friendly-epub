@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<meta name="cover" content="cover.jpg" />
+		<meta property="ibooks:specified-fonts">true</meta>
+		<dc:title id="title">Dyslexia Font Friendly</dc:title>
+		<dc:date>2023-04-27T20:15:37Z</dc:date>
+		<dc:language>en-US</dc:language>
+		<dc:type>education</dc:type>
+		<meta property="dcterms:modified">2023-04-27T20:15:37Z</meta>
+		<dc:identifier id="bookid">urn:uuid:1d30b026-e502-11ed-b5ea-0242ac120002</dc:identifier>
+		<dc:creator>NFATC</dc:creator>
+		<dc:creator>Department of State</dc:creator>
+		<dc:creator>Foreign Service Institute</dc:creator>
+		<dc:creator>SPAS | OMT</dc:creator>
+		<dc:publisher>FSI/AV Digital Publishing Department</dc:publisher>
+		<meta property="a11y:certifiedBy">FSI/AV Digital Publishing Department</meta>
+		<meta property="a11y:certifierCredential">Ace by DAISY</meta>
+		<link rel="dcterms:conformsTo" href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa" />
+		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.0 Level AA.</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessMode">visual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityAPI">ARIA</meta>
+		<meta property="schema:accessibilityControl">fullKeyboardControl</meta>
+		<meta property="schema:accessibilityControl">fullMouseControl</meta>
+		<meta property="schema:accessibilityControl">fullTouchControl</meta>
+		<meta property="schema:accessibilityHazard">noSoundHazard</meta>
+		<meta property="schema:accessibilityHazard">noFlashingHazard</meta>
+		<meta property="schema:accessibilityHazard">noMotionSimulationHazard</meta>
+	</metadata>
+	<manifest>
+	<!-- TOC -->
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+
+	<!-- STYLES -->
+		<item id="styles.css" href="css/styles.css" media-type="text/css" />
+
+		<item id="checklist.js" href="js/script.js" media-type="application/javascript" />
+
+	<!-- XHTML -->
+		<item id="xhtml-00-cover" href="00-Cover.xhtml" media-type="application/xhtml+xml" />
+		<item id="xhtml-01-titlepage" href="01-Titlepage.xhtml" media-type="application/xhtml+xml" />
+		<item id="xhtml-02-font" href="02-Font.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="xhtml-03-toc" href="03-TOC.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+
+	<!-- IMAGES -->
+		<item id="FSI-logo.jpg" href="image/FSI-logo.jpg" media-type="image/jpeg" />
+		<item id="cover.jpg" href="image/Cover.jpg" media-type="image/jpeg" properties="cover-image" />
+	</manifest>
+
+	<spine toc="ncx">
+		<itemref idref="xhtml-00-cover" />
+		<itemref idref="xhtml-01-titlepage" />
+		<itemref idref="xhtml-02-font" />
+		<itemref idref="xhtml-03-toc" />
+	</spine>
+
+	<guide>
+		<reference type="cover" href="00-Cover.xhtml" title="Cover" />
+		<reference type="title-page" href="01-Titlepage.xhtml" title="Title Page" />
+		<reference type="toc" href="03-TOC.xhtml" title="Table of Contents" />
+		<reference type="text" href="00-Cover.xhtml" title="Start of Content" />
+	</guide>
+</package>

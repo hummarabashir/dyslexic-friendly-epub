@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("font/OpenDyslexic-Regular.otf") format("opentype");
+}
+/* Default styles */
+body {
+  font-family: Overpass, Arial, sans-serif;
+  padding: 1em;
+}
+
+/* Dyslexia-friendly mode styles */
+body.dyslexia-friendly {
+  font-family: OpenDyslexic, Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+h1 {
+  font-size: 1.6em;
+}
+p {
+  font-size: 1em;
+}
+.dyslexia-mode {
+  font-family: OpenDyslexic, Arial, sans-serif;
+  background-color: #f9f9f9;
+  /* Add any other dyslexia-friendly styles here */
+}
+
+main {
+  background: #e8e8e8;
+  padding: 1.875em 3.25em;
+  color: #333;
+  line-height: 1.5;
+}
+
+#dyslexia-mode-toggle {
+  padding: 1em;
+  font-size: 1.4em;
+  letter-spacing: 0.35ch;
+  width: 100%;
+  margin-bottom: 1em;
+  border: none;
+  background-color: #b2e5e5;
+}
+
+.dyslexia-mode #dyslexia-mode-toggle {
+  background-color: teal;
+  color: #fff;
+}
+
+.d-mode main {
+  line-height: 2;
+}
+
+.d-mode h2 {
+  border: none;
+  font-size: 1.3em;
+  border-bottom: thin grey solid; /* just keeping the bottom border for this element, to retain some separation */
+  background-color: inherit; /* We no longer look like a label, so we don't require our own background */
+  margin-bottom: 1em;
+  padding-left: 0; /* some spacing adjustments */
+}
+.center {
+  text-align: center;
+}
+.cover {
+  width: 90%;
+  border: 1px solid lightgray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+img.logos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  width: 7em;
+}
+.titlepage-title h1 {
+  font-size: 1.9em;
+  line-height: 1.5;
+  margin-top: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: teal;
+  font-family: Arial, Helvetica, sans-serif;
+}
