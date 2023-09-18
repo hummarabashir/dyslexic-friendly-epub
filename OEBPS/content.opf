@@ -4,17 +4,15 @@
 		<meta name="cover" content="cover.jpg" />
 		<meta property="ibooks:specified-fonts">true</meta>
 		<dc:title id="title">Dyslexia Font Friendly</dc:title>
-		<dc:date>2023-04-27T20:15:37Z</dc:date>
+		<dc:date>2023-08-13T20:15:37Z</dc:date>
 		<dc:language>en-US</dc:language>
 		<dc:type>education</dc:type>
 		<meta property="dcterms:modified">2023-04-27T20:15:37Z</meta>
 		<dc:identifier id="bookid">urn:uuid:1d30b026-e502-11ed-b5ea-0242ac120002</dc:identifier>
-		<dc:creator>NFATC</dc:creator>
-		<dc:creator>Department of State</dc:creator>
-		<dc:creator>Foreign Service Institute</dc:creator>
-		<dc:creator>SPAS | OMT</dc:creator>
-		<dc:publisher>FSI/AV Digital Publishing Department</dc:publisher>
-		<meta property="a11y:certifiedBy">FSI/AV Digital Publishing Department</meta>
+		<dc:creator>Demo</dc:creator>
+		<dc:creator>HB</dc:creator>
+		<dc:publisher>Demo</dc:publisher>
+		<meta property="a11y:certifiedBy">Demo</meta>
 		<meta property="a11y:certifierCredential">Ace by DAISY</meta>
 		<link rel="dcterms:conformsTo" href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa" />
 		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.0 Level AA.</meta>
@@ -37,12 +35,22 @@
 
 	<!-- STYLES -->
 		<item id="styles.css" href="css/styles.css" media-type="text/css" />
+		<item id="OpenDyslexic-Bold" href="css/font/OpenDyslexic-Bold.otf" media-type="application/opentype"/>
+		<item id="OpenDyslexic-BoldItalic" href="css/font/OpenDyslexic-BoldItalic.otf" media-type="application/opentype"/>
+		<item id="OpenDyslexic-Italic" href="css/font/OpenDyslexic-Italic.otf" media-type="application/opentype"/>
+		<item id="OpenDyslexic-Regular" href="css/font/OpenDyslexic-Regular.otf" media-type="application/opentype"/>
+		<item id="OpenDyslexicAlta-Bold" href="css/font/OpenDyslexicAlta-Bold.otf" media-type="application/opentype"/>
+		<item id="OpenDyslexicAlta-BoldItalic" href="css/font/OpenDyslexicAlta-BoldItalic.otf" media-type="application/opentype"/>
+		<item id="OpenDyslexicAlta-Italic" href="css/font/OpenDyslexicAlta-Italic.otf" media-type="application/opentype"/>
+		<item id="OpenDyslexicAlta-Regular" href="css/font/OpenDyslexicAlta-Regular.otf" media-type="application/opentype"/>
+		<item id="OpenDyslexicMono-Regular" href="css/font/OpenDyslexicMono-Regular.otf" media-type="application/opentype"/>
+
 
 		<item id="checklist.js" href="js/script.js" media-type="application/javascript" />
 
 	<!-- XHTML -->
 		<item id="xhtml-00-cover" href="00-Cover.xhtml" media-type="application/xhtml+xml" />
-		<item id="xhtml-01-titlepage" href="01-Titlepage.xhtml" media-type="application/xhtml+xml" />
+		<item id="xhtml-01-titlepage" href="01-Titlepage.xhtml" media-type="application/xhtml+xml" properties="scripted" />
 		<item id="xhtml-02-font" href="02-Font.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 		<item id="xhtml-03-toc" href="03-TOC.xhtml" media-type="application/xhtml+xml" properties="nav"/>
 

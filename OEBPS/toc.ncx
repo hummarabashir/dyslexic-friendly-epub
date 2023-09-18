@@ -12,7 +12,7 @@
 	<navMap>
 		<navPoint id="navpoint1" playOrder="1"><navLabel><text>Cover</text></navLabel><content src="00-Cover.xhtml" /></navPoint>
 		<navPoint id="navpoint3" playOrder="2"><navLabel><text>Title Page</text></navLabel><content src="01-Titlepage.xhtml" /></navPoint>
-		<navPoint id="navpoint2" playOrder="3"><navLabel><text>Dyslexia Font</text></navLabel><content src="02-Font.xhtml" /></navPoint>
+		<navPoint id="navpoint2" playOrder="3"><navLabel><text>Font</text></navLabel><content src="02-Font.xhtml" /></navPoint>
 		<navPoint id="navpoint4" playOrder="4"><navLabel><text>Table of Contents</text></navLabel><content src="03-TOC.xhtml" /></navPoint>
 	</navMap>
 </ncx>
