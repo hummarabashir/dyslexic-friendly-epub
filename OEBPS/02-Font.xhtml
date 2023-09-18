@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE xhtml>
 <html
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:epub="http://www.idpf.org/2007/ops"
@@ -6,10 +7,12 @@
   lang="en-US"
 >
   <head>
-    <meta charset="utf-8" />
-    <title>Dyslexia Font Friendly</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font</title>
+    <link type="text/css" href="css/styles.css" rel="stylesheet" />
   </head>
+
   <body class="d-mode">
     <header>
       <button id="dyslexia-mode-toggle">Enable Dyslexia-Friendly Mode</button>
@@ -38,6 +41,34 @@
         </p>
       </main>
     </article>
-    <script src="js/script.js"></script>
+    <script xmlns="http://www.w3.org/1999/xhtml">
+      var toggleButton = document.getElementById("dyslexia-mode-toggle");
+      var body = document.body;
+
+      function applyDyslexiaFont() {
+        if (localStorage.getItem("dyslexiaFontEnabled") === "true") {
+          body.classList.add("dyslexia-mode");
+        } else {
+          body.classList.remove("dyslexia-mode");
+        }
+      }
+
+      applyDyslexiaFont();
+
+      window.addEventListener("storage", function (event) {
+        if (event.key === "dyslexiaFontEnabled") {
+          applyDyslexiaFont();
+        }
+      });
+
+      toggleButton.addEventListener("click", function () {
+        body.classList.toggle("dyslexia-mode");
+        if (body.classList.contains("dyslexia-mode")) {
+          localStorage.setItem("dyslexiaFontEnabled", "true");
+        } else {
+          localStorage.removeItem("dyslexiaFontEnabled");
+        }
+      });
+    </script>
   </body>
 </html>

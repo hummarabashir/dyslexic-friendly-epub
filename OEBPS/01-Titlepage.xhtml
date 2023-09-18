@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE xhtml>
 <html
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:epub="http://www.idpf.org/2007/ops"
@@ -6,12 +7,12 @@
   lang="en-US"
 >
   <head>
-    <meta charset="utf-8" />
-    <title>Titlepage</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Book Features</title>
+    <link type="text/css" href="css/styles.css" rel="stylesheet" />
   </head>
-
-  <body id="titlepage">
+  <body id="titlepage" class="d-mode">
     <section class="margin-left-xl margin-right-xl">
       <img
         class="logos"
@@ -22,5 +23,25 @@
         <h1>DYSLEXIC-FRIENDLY EBOOK DEMO</h1>
       </div>
     </section>
+
+    <script xmlns="http://www.w3.org/1999/xhtml">
+      var body = document.body;
+
+      function applyDyslexiaFont() {
+        if (localStorage.getItem("dyslexiaFontEnabled") === "true") {
+          body.classList.add("dyslexia-mode");
+        } else {
+          body.classList.remove("dyslexia-mode");
+        }
+      }
+
+      applyDyslexiaFont();
+
+      window.addEventListener("storage", function (event) {
+        if (event.key === "dyslexiaFontEnabled") {
+          applyDyslexiaFont();
+        }
+      });
+    </script>
   </body>
 </html>

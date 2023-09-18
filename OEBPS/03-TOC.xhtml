@@ -11,7 +11,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <body id="table-of-contents">
+  <body id="table-of-contents" class="d-mode">
     <section>
       <h1>Table of Contents</h1>
       <nav epub:type="toc" role="doc-toc">
@@ -23,5 +23,25 @@
         </ol>
       </nav>
     </section>
+
+    <script xmlns="http://www.w3.org/1999/xhtml">
+      var body = document.body;
+
+      function applyDyslexiaFont() {
+        if (localStorage.getItem("dyslexiaFontEnabled") === "true") {
+          body.classList.add("dyslexia-mode");
+        } else {
+          body.classList.remove("dyslexia-mode");
+        }
+      }
+
+      applyDyslexiaFont();
+
+      window.addEventListener("storage", function (event) {
+        if (event.key === "dyslexiaFontEnabled") {
+          applyDyslexiaFont();
+        }
+      });
+    </script>
   </body>
 </html>
